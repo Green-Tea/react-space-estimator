@@ -1,0 +1,50 @@
+input {
+  height: 50px;
+  width: 50px;
+  text-align: center;
+}
+
+label {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+tr {
+  display: table-row;
+}
+
+.App{
+  margin-top: 1rem;
+  margin-left: 2rem;
+}
+
+.sizedesc {
+  padding: 1rem 1rem;
+}
+
+.items {
+  display:flex;
+  padding-top: 1rem;
+}
+
+.card {
+  margin-bottom: 1rem;
+  max-width: 18rem;
+}
+
+.card-body {
+  min-height: 20rem;
+  min-width: 18rem;
+}
+
+.card-columns{
+  margin-right: 1rem;
+}
+
+.right{
+  float:right;
+}
+
+.left{
+  float:left;
+}
