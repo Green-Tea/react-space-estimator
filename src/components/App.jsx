@@ -217,7 +217,7 @@ function App() {
   const spaceNeeded = spaces.reduce((partialSum, a) => partialSum + a, 0);
 
   const vols = [];
-  for (var i = 0; i < Data.length; i++) { vols.push(Math.ceil(values[Data[i][4]] * Data[i][1] * Data[i][2] * Data[i][3])) };
+  for (var j = 0; j < Data.length; j++) { vols.push(Math.ceil(values[Data[j][4]] * Data[j][1] * Data[j][2] * Data[j][3])) };
   const volNeeded = vols.reduce((partialSum, a) => partialSum + a, 0);
 
   return (
