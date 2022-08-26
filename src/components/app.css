@@ -9,13 +9,23 @@ label {
   padding-right: 0.5rem;
 }
 
-tr {
-  display: table-row;
-}
-
 .App{
   margin-top: 1rem;
   margin-left: 2rem;
+}
+
+.container__items {
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1.5rem;
+}
+
+.container__item {
+  border: 1px solid;
+  border-radius: 1rem;
+  padding: 0.5rem;
+  border-color: gainsboro;
 }
 
 .sizedesc {
