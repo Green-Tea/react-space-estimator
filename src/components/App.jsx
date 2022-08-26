@@ -812,8 +812,8 @@ function App() {
     else return ([40])
   }
 
-  const spaces = [0];
-  const vols = [0];
+  const spaces = [];
+  const vols = [];
 
   for (var i = 0; i < Data.length; i++) {
     spaces.push(Math.ceil(values[Data[i].id] * Data[i].l * Data[i].h))
