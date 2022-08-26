@@ -880,7 +880,7 @@ function App() {
                                   <label for={names}>
                                     <b>{names}</b>
                                   </label>
-                                  <div>L: {Math.round(l * 100)} W: {Math.round(w * 100)} H: {Math.round(h * 100)}</div>
+                                  <div>L: {Math.round(l * 100)}cm W: {Math.round(w * 100)}cm H: {Math.round(h * 100)}cm</div>
                                 </div>
                                 : null}
                             </>
