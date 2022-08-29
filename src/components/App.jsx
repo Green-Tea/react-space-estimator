@@ -852,7 +852,7 @@ function App() {
             </div>
             <div className='sizedesc'>
               {recSize(volNeeded).map(k => <p>{k} cbm</p>)}
-              <p class="card-text"><small class="text-muted">Actual storage size may vary depending on item stackability</small></p>
+              <p class="card-text"><small class="text-muted">This is an estimate, actual storage size may vary depending on item stackability</small></p>
             </div>
           </div>
         </div>
@@ -868,7 +868,7 @@ function App() {
                           return (
                             <>
                               {category === tab ?
-                                <div key={id} className='container__item'>
+                                <div key={id} className='container container__item'>
                                   <input
                                     type='number'
                                     min='0'
@@ -878,9 +878,11 @@ function App() {
                                     label={id}
                                   />
                                   <label for={names}>
-                                    <b>{names}</b>
+                                    <p>
+                                      <b>{names}<br /> </b>
+                                      <small>L: {Math.round(l * 100)}cm W: {Math.round(w * 100)}cm H: {Math.round(h * 100)}cm</small>
+                                    </p>
                                   </label>
-                                  <div><small>L: {Math.round(l * 100)}cm W: {Math.round(w * 100)}cm H: {Math.round(h * 100)}cm</small></div>
                                 </div>
                                 : null}
                             </>
